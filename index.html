@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login and Registration</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+
+      h1 {
+        margin-bottom: 20px;
+      }
+
+      input {
+        margin-bottom: 10px;
+      }
+
+      button {
+        margin-top: 10px;
+      }
+
+      #registration,
+      #login {
+        display: inline-block;
+        margin-right: 20px;
+        vertical-align: top;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Login and Registration</h1>
+
+    <div id="registration">
+      <h2>Registration</h2>
+      <input type="text" id="registerUsername" placeholder="Username" />
+      <input type="password" id="registerPassword" placeholder="Password" />
+      <button onclick="register()">Register</button>
+    </div>
+
+    <div id="login">
+      <h2>Login</h2>
+      <input type="text" id="loginUsername" placeholder="Username" />
+      <input type="password" id="loginPassword" placeholder="Password" />
+      <button onclick="login()">Login</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
